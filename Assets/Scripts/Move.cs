@@ -39,6 +39,7 @@ public class Move : MonoBehaviour
     public GameObject plant;        //地板
     private double temp = 0;        //临时储存值的变量
     private float tempSpeed = 0;    //保存初始速度，用于改变速度后改变回来
+    public GameObject obj;
              
     public double  score = 0;       //当前分数
     public double  score1 = 20f;    //一块地板的得分
@@ -73,7 +74,7 @@ public class Move : MonoBehaviour
         Canvas2.SetActive(false);       //设置结束游戏画布为隐藏
         Canvas1.SetActive(true);        //设置游戏中画布为显示
         score = 0;                      //得分初始化
-        color = PlayerColor.Red;        //设置玩家初始颜色
+        color = PlayerColor.Yellow;        //设置玩家初始颜色
         renderer = GetComponentInChildren<SpriteRenderer>();    //获取玩家自身模型的SpriteRenderer
         //renderer.color = Color.red;     //设置模型颜色
         tempSpeed = speed;              //初始化初始速度

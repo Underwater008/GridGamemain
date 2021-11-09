@@ -22,27 +22,19 @@ public class GridManager : MonoBehaviour
     public int itemsCount = 0;                      //道具数量
 
     // Start is called before the first frame update
-    private void Awake()
-    {
+    private void Start()
+    { 
         gridTiles = new GameObject[gridWidth + 2, gridHeight + 2];
-        while (countGreen == 0 || countYellow == 0)
+        for (int x = 0; x < gridWidth + 2; x++)
         {
-            for (int x = 0; x < gridWidth + 2; x++)
+            for (int y = 0; y < gridHeight + 2; y++)
             {
-                for (int y = 0; y < gridHeight + 2; y++)
-                {
-                    MakeTile(x, y);
-                }
+                MakeTile(x, y);
             }
         }
     }
 
-    void Start()
-    {
-        
 
-        //Debug.Log(gridTiles[0, 0].GetComponent<SpriteRenderer>().sprite);
-    }
 
 
     void CreateItems()
@@ -81,12 +73,12 @@ public class GridManager : MonoBehaviour
             else if (randTile == 1)
             {
                 myData.tileSpeed = 1;
-                countRed += 1;
+                countYellow += 1;
             }
             else if (randTile == 2)
             {
                 myData.tileSpeed = 7;
-                countYellow += 1;
+                countRed += 1;
             }
             myData.gridX = xPos;
             myData.gridY = yPos;

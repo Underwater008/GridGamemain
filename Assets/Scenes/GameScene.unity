@@ -1395,6 +1395,7 @@ MonoBehaviour:
   - {fileID: 8382784088044284541, guid: 170d9e1394137a64b9c5a73075bef9b6, type: 3}
   - {fileID: 3659331975159608859, guid: 02ad7e93395d68f41b1f9abbd37e65df, type: 3}
   plant: {fileID: 1929222656}
+  obj: {fileID: 0}
   score: 0
   score1: 20
   time: 180
@@ -2018,11 +2019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5806182174240854999, guid: c252077f8e8aa3548bf7de8050c56367, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.65
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 5806182174240854999, guid: c252077f8e8aa3548bf7de8050c56367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.04
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 5806182174240854999, guid: c252077f8e8aa3548bf7de8050c56367, type: 3}
       propertyPath: m_LocalPosition.z
